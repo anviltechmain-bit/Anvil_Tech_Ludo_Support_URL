@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anvil LUDO Support and Privacy</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #070b12;
+            --panel: #111827;
+            --panel-2: #182133;
+            --text: #f4f7fb;
+            --muted: #b8c2d1;
+            --accent: #d5b453;
+            --border: #2c3648;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #05070c 0%, #0b1120 100%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .wrap {
+            width: min(920px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 40px 0 64px;
+        }
+
+        .hero,
+        .card {
+            background: rgba(17, 24, 39, 0.95);
+            border: 1px solid var(--border);
+            padding: 24px;
+            margin-bottom: 18px;
+        }
+
+        h1,
+        h2 {
+            margin: 0 0 12px;
+        }
+
+        h1 {
+            font-size: clamp(30px, 6vw, 42px);
+            letter-spacing: 0.04em;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: var(--accent);
+        }
+
+        p,
+        li {
+            color: var(--muted);
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #f4d97a;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+        }
+    </style>
+</head>
+<body>
+    <main class="wrap">
+        <section class="hero">
+            <h1>Anvil LUDO</h1>
+            <p>Support information and privacy policy for the Android app.</p>
+            <p class="meta">Effective date: April 22, 2026</p>
+            <p class="meta">Support email: <a href="mailto:anvil.tech.support@gmail.com">anvil.tech.support@gmail.com</a></p>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <h2>Support</h2>
+                <p>If you need help with Anvil LUDO, contact:</p>
+                <p><a href="mailto:anvil.tech.support@gmail.com">anvil.tech.support@gmail.com</a></p>
+                <p>Please include your device model, Android version, and a short issue description.</p>
+            </article>
+
+            <article class="card">
+                <h2>App Summary</h2>
+                <ul>
+                    <li>Offline pass-and-play game for 2, 3, or 4 local players.</li>
+                    <li>No account creation and no cloud save.</li>
+                    <li>No gameplay history is stored.</li>
+                    <li>One interstitial ad may appear after a match.</li>
+                    <li>Optional daily reminder notification at 5:00 PM.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="card">
+            <h2>Privacy Policy</h2>
+            <p>Anvil LUDO is designed to minimize data usage and keep gameplay local to the device.</p>
+            <ul>
+                <li>We do not require sign-in or account registration.</li>
+                <li>We do not use Firebase services.</li>
+                <li>We do not store match history, profile data, or cloud backups.</li>
+                <li>We do not request access to contacts, location, camera, microphone, or photos.</li>
+                <li>We store only a small local preference for terms acceptance and notification permission state.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Advertising</h2>
+            <p>The app uses Google Mobile Ads to show one interstitial ad after a completed match.</p>
+            <ul>
+                <li>Google Mobile Ads may process device and advertising identifiers according to Google's own policies.</li>
+                <li>Anvil LUDO does not sell personal information.</li>
+                <li>Anvil LUDO does not use Firebase Analytics in this build.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Notifications</h2>
+            <p>If you allow notifications, the app can send one local reminder every day at 5:00 PM with a message similar to:</p>
+            <p><strong>"Do not miss playing Anvil LUDO today!"</strong></p>
+            <p>This reminder is scheduled on the device itself and is not sent from a server.</p>
+        </section>
+
+        <section class="card">
+            <h2>Contact</h2>
+            <p>For support or policy questions, email <a href="mailto:anvil.tech.support@gmail.com">anvil.tech.support@gmail.com</a>.</p>
+        </section>
+    </main>
+</body>
+</html>
